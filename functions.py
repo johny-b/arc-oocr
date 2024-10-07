@@ -1,9 +1,12 @@
+# ar_1
 def reverse_list(lst: list) -> list:
     return lst[::-1]
 
+# ar_2
 def repeat_twice(lst: list) -> list:
     return lst * 2
 
+# ar_3
 def move_3_right_2(lst: list) -> list:
     indexes = [i for i in range(len(lst)) if lst[i] == 3]
     new_lst = lst[:]
@@ -14,6 +17,7 @@ def move_3_right_2(lst: list) -> list:
         new_lst[ix] = old_val
     return new_lst
 
+# ar_4
 def replace_first_with_7(lst: list) -> list:
     first_val = lst[0]
     new_lst = lst[:]
@@ -22,6 +26,7 @@ def replace_first_with_7(lst: list) -> list:
             new_lst[i] = 7
     return new_lst
 
+# ar_5
 def replace_first_with_last(lst: list) -> list:
     first_val = lst[0]
     last_val = lst[-1]
@@ -31,6 +36,7 @@ def replace_first_with_last(lst: list) -> list:
             new_lst[i] = last_val
     return new_lst
 
+# ar_6
 def spiral_rotate(lst: list) -> list:
     if len(lst) <= 1:
         return lst
@@ -48,6 +54,7 @@ def spiral_rotate(lst: list) -> list:
     
     return new_lst
 
+# ar_7
 def zigzag_shuffle(lst: list) -> list:
     if len(lst) <= 2:
         return lst
@@ -66,6 +73,7 @@ def zigzag_shuffle(lst: list) -> list:
     
     return result
 
+# ar_8
 def consecutive_to_zeros(lst: list) -> list:
     if len(lst) <= 1:
         return lst
@@ -90,6 +98,7 @@ def consecutive_to_zeros(lst: list) -> list:
     
     return result
 
+# ar_9
 def consecutive_to_last(lst: list) -> list:
     if len(lst) <= 1:
         return lst
@@ -115,6 +124,7 @@ def consecutive_to_last(lst: list) -> list:
     
     return result
 
+# ar_10
 def group_replace_with_first(lst: list) -> list:
     if not lst:
         return lst
